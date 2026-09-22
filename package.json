@@ -1,0 +1,29 @@
+{
+  "name": "apisco-precision",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev & npx next-video sync -w",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mux/mux-player-react": "^3.13.4",
+    "gsap": "^3.12.5",
+    "init": "^0.1.2",
+    "lucide-react": "^0.468.0",
+    "next": "^15.0.0",
+    "next-video": "^2.8.1",
+    "npx": "^10.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}
