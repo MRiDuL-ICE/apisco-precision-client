@@ -1,7 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { SOLUTION_ITEMS } from "@/lib/constants";
 import { SectionHeader } from "./section-header";
-import { PlainList } from "./plain-list";
 
 export function SolutionsSection() {
   return (
@@ -16,8 +15,10 @@ export function SolutionsSection() {
           kicker="For when the usual line does not hold"
           dark
         />
-        <div className="support-grid">
-          <div className="body-copy reveal">
+
+        <div className="solutions-grid">
+          {/* Left: body copy + CTA */}
+          <div className="solutions-copy reveal">
             <p>
               When a single source becomes a supply risk, or a molecule falls
               outside the standing catalogue, Apisco Precision builds the route
@@ -32,13 +33,27 @@ export function SolutionsSection() {
               href="#contact"
               data-testid="link-solutions-contact"
             >
-              Share a sourcing brief{" "}
+              Share a sourcing brief
               <ArrowUpRight size={15} strokeWidth={1.8} />
             </a>
           </div>
-          <div className="reveal">
-            <PlainList items={SOLUTION_ITEMS} />
-          </div>
+
+          {/* Right: scenario list — replaces PlainList */}
+          <ul className="solutions-list reveal" aria-label="Sourcing scenarios">
+            {SOLUTION_ITEMS.map((item, i) => (
+              <li className="solutions-item" key={i}>
+                <span className="solutions-num" aria-hidden="true">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="solutions-item-body">
+                  {item.tag && (
+                    <span className="solutions-tag">{item.tag}</span>
+                  )}
+                  <p className="solutions-text">{item.text ?? item}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

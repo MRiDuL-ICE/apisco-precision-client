@@ -8,8 +8,10 @@ export function AboutSection() {
           title="About Apisco Precision"
           kicker="A practice built around the handoff"
         />
-        <div className="row">
-          <div className="col-12 col-md-7 body-copy reveal">
+
+        <div className="about-grid">
+          {/* Left: body copy */}
+          <div className="body-copy reveal">
             <p>
               Apisco Precision continues a sourcing and indenting practice built
               around one simple observation: the space between an overseas
@@ -30,7 +32,8 @@ export function AboutSection() {
             </p>
           </div>
 
-          <div className="col-12 col-md-5 reveal">
+          {/* Right: record card — pinned to the right edge */}
+          <div className="about-card-col reveal">
             <div className="record-card">
               <div className="record-head">
                 <div>

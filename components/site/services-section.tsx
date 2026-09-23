@@ -22,11 +22,13 @@ export function ServicesSection() {
             technical documentation and pricing move one way, purchase orders
             and delivery requirements move back.
           </p>
+
           <div
             className="flow-canvas"
             role="img"
             aria-label="Flow from overseas principal through Apisco Precision to local manufacturer"
           >
+            {/* Left node */}
             <div className="flow-node">
               <span className="flow-label">Overseas principal</span>
               <h3 className="flow-node-title">
@@ -36,15 +38,45 @@ export function ServicesSection() {
                 DMF, COA, CEP and commercial terms
               </p>
             </div>
-            <span className="flow-connector left" aria-hidden="true" />
-            <span className="flow-meta left">Documentation / samples</span>
-            <div className="flow-node center">
+
+            {/* Left connector */}
+            <div className="flow-connector-wrap" aria-hidden="true">
+              <span className="flow-meta">Documentation / samples</span>
+              <div className="flow-arrows">
+                <div className="flow-arrow flow-arrow--left">
+                  <span className="arrow-head arrow-head--left" />
+                  <span className="arrow-line" />
+                </div>
+                <div className="flow-arrow flow-arrow--right">
+                  <span className="arrow-line" />
+                  <span className="arrow-head arrow-head--right" />
+                </div>
+              </div>
+            </div>
+
+            {/* Center node */}
+            <div className="flow-node flow-node--center">
               <span className="flow-label">Indenting agent</span>
               <h3 className="flow-node-title">Apisco Precision</h3>
               <p className="flow-node-sub">Dhaka, Bangladesh</p>
             </div>
-            <span className="flow-connector right" aria-hidden="true" />
-            <span className="flow-meta right">DGDA liaison / logistics</span>
+
+            {/* Right connector */}
+            <div className="flow-connector-wrap" aria-hidden="true">
+              <span className="flow-meta">DGDA liaison / logistics</span>
+              <div className="flow-arrows">
+                <div className="flow-arrow flow-arrow--left">
+                  <span className="arrow-head arrow-head--left" />
+                  <span className="arrow-line" />
+                </div>
+                <div className="flow-arrow flow-arrow--right">
+                  <span className="arrow-line" />
+                  <span className="arrow-head arrow-head--right" />
+                </div>
+              </div>
+            </div>
+
+            {/* Right node */}
             <div className="flow-node">
               <span className="flow-label">Local manufacturer</span>
               <h3 className="flow-node-title">
@@ -55,6 +87,7 @@ export function ServicesSection() {
               </p>
             </div>
           </div>
+
           <p className="flow-footnote">
             A clear handoff at every point. No quiet gaps between the
             specification, the file and the shipment.
