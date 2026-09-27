@@ -109,19 +109,23 @@ export const SUPPORT_ITEMS = [
 
 export const SOLUTION_ITEMS = [
   {
-    "Alternate-source identification",
-    "to protect supply continuity when a principal's capacity is constrained.",
+    title: "Alternate-source identification",
+    text: "to protect supply continuity when a principal's capacity is constrained.",
+    tag: "Supply Continuity",
   },
   {
-    "Sample-to-commercial pathway",
-    "sample dispatch, technical evaluation and scale-up quotation before the first commercial order.",
+    title: "Sample-to-commercial pathway",
+    text: "sample dispatch, technical evaluation and scale-up quotation before the first commercial order.",
+    tag: "Process",
   },
   {
-    "Custom sourcing briefs",
-    "for hard-to-place or single-source molecules that don't have a standing supply line yet.",
+    title: "Custom sourcing briefs",
+    text: "for hard-to-place or single-source molecules that don't have a standing supply line yet.",
+    tag: "Sourcing",
   },
   {
-    "Price and lead-time monitoring",
-    "across represented principals, flagged before it becomes the buyer's problem.",
+    title: "Price and lead-time monitoring",
+    text: "across represented principals, flagged before it becomes the buyer's problem.",
+    tag: "Monitoring",
   },
 ] as const;
