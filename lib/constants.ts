@@ -108,20 +108,20 @@ export const SUPPORT_ITEMS = [
 ] as const;
 
 export const SOLUTION_ITEMS = [
-  [
+  {
     "Alternate-source identification",
     "to protect supply continuity when a principal's capacity is constrained.",
-  ],
-  [
+  },
+  {
     "Sample-to-commercial pathway",
     "sample dispatch, technical evaluation and scale-up quotation before the first commercial order.",
-  ],
-  [
+  },
+  {
     "Custom sourcing briefs",
     "for hard-to-place or single-source molecules that don't have a standing supply line yet.",
-  ],
-  [
+  },
+  {
     "Price and lead-time monitoring",
     "across represented principals, flagged before it becomes the buyer's problem.",
-  ],
+  },
 ] as const;

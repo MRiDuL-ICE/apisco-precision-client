@@ -46,7 +46,7 @@ export function SolutionsSection() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="solutions-item-body">
-                  {item.tag && (
+                  {item?.tag && (
                     <span className="solutions-tag">{item.tag}</span>
                   )}
                   <p className="solutions-text">{item.text ?? item}</p>
