@@ -1,6 +1,6 @@
 # Apisco Precision
 
-Pharmaceutical ingredient sourcing & indenting — Dhaka, Bangladesh.
+Pharmaceutical ingredient sourcing & indenting — Bangladesh.
 
 ## Getting started
 
@@ -54,6 +54,7 @@ apisco-precision/
 ## What changed from the original
 
 **Removed:**
+
 - Replit monorepo wrapper (`artifacts/`, `lib/`, `scripts/`) — not needed locally
 - Bootstrap dependency — the project already had its own layout primitives that duplicate Bootstrap cols
 - 40+ shadcn/Radix/Tailwind packages — none are used in this site
@@ -62,10 +63,12 @@ apisco-precision/
 - `src/components/site/content-sections.tsx` god file — 5 sections in one file
 
 **Restructured:**
+
 - Each page section is its own file in `components/site/`
 - All content data lives in `lib/constants.ts` — one place to edit copy
 - Custom hooks extracted: `use-active-section.ts` out of `header.tsx`, `use-gsap-reveal.ts` out of `landing-page.tsx`
 - `GsapRevealInit` client component isolates the `"use client"` boundary so `page.tsx` stays a Server Component
 - CSS moved from `src/index.css` to `styles/globals.css`
 - `package.json` trimmed to actual dependencies (5 runtime deps vs 60+)
+
 # apisco-precision-client

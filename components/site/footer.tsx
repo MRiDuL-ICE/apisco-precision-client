@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <span className="mono">Apisco Precision — Dhaka, Bangladesh</span>
+        <span className="mono">Apisco Precision — Bangladesh</span>
         <button
           className="back-top"
           type="button"
@@ -15,7 +15,9 @@ export function Footer() {
         >
           Back to top <ArrowUp size={13} strokeWidth={1.6} />
         </button>
-        <span className="mono">© {new Date().getFullYear()} Apisco Precision</span>
+        <span className="mono">
+          © {new Date().getFullYear()} Apisco Precision
+        </span>
       </div>
     </footer>
   );

@@ -7,16 +7,13 @@ export function HeroSection() {
       <div className="container">
         <div className="row hero-grid" style={{ alignItems: "center" }}>
           <div className="col-12 col-md-6 hero-copy">
-            <p className="eyebrow reveal">
-              Pharmaceutical ingredient sourcing &amp; indenting — Dhaka,
-              Bangladesh
-            </p>
+            <p className="eyebrow reveal">Pharmaceutical industry solutions</p>
             <h1 id="hero-title" className="hero-title reveal">
-              The bridge between <em>global makers</em> and Bangladesh&apos;s
-              pharmaceutical industry.
+              The bridge between <em>global manufacturers</em> and
+              Bangladesh&apos;s pharmaceutical industry.
             </h1>
             <p className="hero-lede reveal">
-              Apisco Precision acts as the local indenting agent for overseas
+              Apisco Precision acts as a solution provider for global
               manufacturers of Active Pharmaceutical Ingredients, excipients and
               packaging materials — carrying technical documentation, DGDA
               liaison and import logistics so a shipment moves cleanly from
@@ -28,18 +25,20 @@ export function HeroSection() {
                 href="#services"
                 data-testid="link-hero-services"
               >
-                View services <ArrowDownRight size={15} strokeWidth={1.8} />
-              </a>
-              <a
-                className="btn btn-outline"
-                href="#contact"
-                data-testid="link-hero-contact"
-              >
-                Start a conversation{" "}
-                <ArrowUpRight size={15} strokeWidth={1.8} />
+                View services{" "}
+                <ArrowDownRight
+                  style={{
+                    background: "white",
+                    color: "var(--navy)",
+                    borderRadius: "50%",
+                    padding: "2px",
+                  }}
+                  size={22}
+                  strokeWidth={1.9}
+                />
               </a>
               <span className="hero-note">
-                For manufacturers &amp; overseas principals
+                For manufacturers &amp; global principals
               </span>
             </div>
           </div>

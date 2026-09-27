@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     description:
       "A considered route between global pharmaceutical ingredient manufacturers and Bangladesh's formulation floor.",
     type: "website",
+    images: [
+      {
+        url: "/logo.png", // Or a relative path like '/og-image.png' if using metadataBase
+        width: 1200,
+        height: 630,
+        alt: "Apisco Precision logo",
+      },
+    ],
   },
 };
 

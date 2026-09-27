@@ -90,7 +90,7 @@ export function ContactSection() {
                   <Globe size={13} strokeWidth={1.5} aria-hidden="true" />
                   Base
                 </span>
-                <span className="field-value">Dhaka, Bangladesh</span>
+                <span className="field-value">Bangladesh</span>
               </div>
               <div className="contact-detail">
                 <span className="field-label">

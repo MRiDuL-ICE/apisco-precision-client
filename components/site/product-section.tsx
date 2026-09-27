@@ -11,7 +11,7 @@ export function ProductSection() {
       <div className="container">
         <SectionHeader
           title="Product categories"
-          kicker="Carried through represented principals"
+          kicker="Carried through represented partners"
           dark
         />
         <div className="category-grid">

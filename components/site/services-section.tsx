@@ -30,12 +30,13 @@ export function ServicesSection() {
           >
             {/* Left node */}
             <div className="flow-node">
-              <span className="flow-label">Overseas principal</span>
+              <span className="flow-label">Global manufacturer</span>
               <h3 className="flow-node-title">
                 API / excipient / packaging manufacturer
               </h3>
               <p className="flow-node-sub">
-                DMF, COA, CEP and commercial terms
+                US-DMF, CEP, DMF Holder, WHO-GMP, EU-GMP, ISO, HALAL, KOSHER,
+                GMP certified
               </p>
             </div>
 
@@ -56,9 +57,9 @@ export function ServicesSection() {
 
             {/* Center node */}
             <div className="flow-node flow-node--center">
-              <span className="flow-label">Indenting agent</span>
+              <span className="flow-label">Solution provider</span>
               <h3 className="flow-node-title">Apisco Precision</h3>
-              <p className="flow-node-sub">Dhaka, Bangladesh</p>
+              <p className="flow-node-sub">Bangladesh</p>
             </div>
 
             {/* Right connector */}
@@ -78,7 +79,7 @@ export function ServicesSection() {
 
             {/* Right node */}
             <div className="flow-node">
-              <span className="flow-label">Local manufacturer</span>
+              <span className="flow-label">Customer</span>
               <h3 className="flow-node-title">
                 Bangladeshi pharmaceutical company
               </h3>
