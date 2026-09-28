@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_ITEMS } from "@/lib/constants";
-import { useActiveSection } from "@/hooks/use-active-section";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
