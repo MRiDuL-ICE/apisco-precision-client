@@ -1,8 +1,11 @@
-import { ArrowUpRight } from "lucide-react";
 import { Building, MapPin, Phone, Globe, Link } from "lucide-react";
-import { SectionHeader } from "./section-header";
+import { Metadata } from "next";
 
-export function ContactSection() {
+export const metadata: Metadata = {
+  title: "Contact | Apisco Precision",
+  description: "Get in touch with Apisco Precision.",
+};
+export default function ContactSection() {
   return (
     <section
       id="contact"

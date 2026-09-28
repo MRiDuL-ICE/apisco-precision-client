@@ -1,8 +1,14 @@
+import { PlainList } from "@/components/site/plain-list";
+import { SectionHeader } from "@/components/site/section-header";
 import { SUPPORT_ITEMS } from "@/lib/constants";
-import { SectionHeader } from "./section-header";
-import { PlainList } from "./plain-list";
+import { Metadata } from "next";
 
-export function SupportSection() {
+export const metadata: Metadata = {
+  title: "Support | Apisco Precision",
+  description: "Get in touch with Apisco Precision.",
+};
+
+export default function SupportSection() {
   return (
     <section id="support" className="section" aria-labelledby="support-title">
       <div className="container">

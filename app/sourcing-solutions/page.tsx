@@ -1,8 +1,14 @@
-import { ArrowUpRight } from "lucide-react";
+import { SectionHeader } from "@/components/site/section-header";
 import { SOLUTION_ITEMS } from "@/lib/constants";
-import { SectionHeader } from "./section-header";
+import { Metadata } from "next";
 
-export function SolutionsSection() {
+export const metadata: Metadata = {
+  title: "Sourcing solutions | Apisco Precision",
+  description:
+    "Apisco Precision connects global API manufacturers with Bangladesh's pharmaceutical industry through precise sourcing, documentation and logistics.",
+};
+
+export default function SolutionsSection() {
   return (
     <section
       id="solutions"

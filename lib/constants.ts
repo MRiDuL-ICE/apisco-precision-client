@@ -10,13 +10,13 @@ import {
 } from "lucide-react";
 
 export const NAV_ITEMS = [
-  { label: "Home", id: "home" },
-  { label: "About", id: "about" },
-  { label: "Key Services", id: "services" },
-  { label: "Product", id: "product" },
-  { label: "Technical Support", id: "support" },
-  { label: "Sourcing Solutions", id: "solutions" },
-  { label: "Contact", id: "contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Key Services", href: "/key-services" },
+  { label: "Product", href: "/product" },
+  { label: "Technical Support", href: "/technical-support" },
+  { label: "Sourcing Solutions", href: "/sourcing-solutions" },
+  { label: "Contact", href: "/contact" },
 ] as const;
 
 export const SERVICES = [
@@ -62,21 +62,21 @@ export const PRODUCT_CATEGORIES = [
     number: "D.01",
     mark: "API",
     title: "Active Pharmaceutical Ingredients",
-    text: "Bulk drug substances sourced to BP / USP / EP specification, with COA and impurity profile carried through to the buyer.",
+    text: "Quality-assured APIs backed by DMF support, documentation and impurity profile, ready for your formulation and registration needs.",
     icon: FlaskConical,
   },
   {
     number: "D.02",
     mark: "EX",
     title: "Pharmaceutical Excipients",
-    text: "Binders, fillers, coating partners and disintegrants sourced for solid and liquid dosage manufacturing.",
+    text: "Functional excipients from trusted manufacturers matched to your formulation, for solid and liquid dosage forms.",
     icon: Layers3,
   },
   {
     number: "D.03",
     mark: "PK",
     title: "Packaging Materials",
-    text: "Blister foil, PVC / PVDC film and cartons sourced against a manufacturer's existing packaging specification.",
+    text: "Primary and secondary packaging materials that match your approved specs, from qualified suppliers.",
     icon: ShieldCheck,
   },
   {
@@ -99,33 +99,33 @@ export const SUPPORT_ITEMS = [
   ],
   [
     "Audit-window coordination",
-    "during WHO-GMP and DGDA inspections, keeping the principal's technical contact reachable.",
+    "real-time support from the manufacturer's technical contact whenever inspectors need answers.",
   ],
   [
     "Dossier variation support",
-    "stability data and regulatory queries handled for existing submissions, not only new ones.",
+    "ongoing support for variations, renewals and regulator queries across the full product lifecycle.",
   ],
 ] as const;
 
 export const SOLUTION_ITEMS = [
   {
     title: "Alternate-source identification",
-    text: "to protect supply continuity when a principal's capacity is constrained.",
+    text: "early warnings on Price shifts, shortages, regulatory changes and supply risks across every principal we represent, so buyers are never caught off guard.",
     tag: "Supply Continuity",
   },
   {
     title: "Sample-to-commercial pathway",
-    text: "sample dispatch, technical evaluation and scale-up quotation before the first commercial order.",
+    text: "samples, technical evaluation and pricing managed end to end, before you commit to a commercial order.",
     tag: "Process",
   },
   {
     title: "Custom sourcing briefs",
-    text: "for hard-to-place or single-source molecules that don't have a standing supply line yet.",
+    text: "finding qualified suppliers for hard to find molecules or single-source molecules with no established supply route.",
     tag: "Sourcing",
   },
   {
     title: "Price and lead-time monitoring",
-    text: "across represented principals, flagged before it becomes the buyer's problem.",
+    text: "whether you're a manufacturer seeking representation, a buyer with a sourcing brief, or following up on an existing order, email is the quickest way to reach us",
     tag: "Monitoring",
   },
 ] as const;

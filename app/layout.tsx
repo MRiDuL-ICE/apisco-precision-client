@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
+import { Header } from "@/components/site/header";
+import { Footer } from "@/components/site/footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://apisco-precision-client.vercel.app/"),
   title: "Apisco Precision - Pharmaceutical ingredient sourcing & indenting",
   description:
     "Apisco Precision connects global API manufacturers with Bangladesh's pharmaceutical industry through precise sourcing, documentation and logistics.",
@@ -12,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png", // Or a relative path like '/og-image.png' if using metadataBase
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Apisco Precision logo",
@@ -28,7 +31,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

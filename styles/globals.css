@@ -33,6 +33,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -40,6 +45,13 @@ body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 /* Subtle noise overlay */
@@ -741,6 +753,13 @@ p,
   font-weight: 800;
   letter-spacing: 0.12em;
   transform: rotate(-2deg);
+}
+
+/* responsive for stamp and make it small */
+@media (max-width: 767px) {
+  .stamp {
+    font-size: 0.45rem;
+  }
 }
 
 .field-row {

@@ -1,14 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_ITEMS } from "@/lib/constants";
 import { useActiveSection } from "@/hooks/use-active-section";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export function Header() {
-  const activeId = useActiveSection("home");
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const pathname = usePathname();
 
   const closeDrawer = () => setDrawerOpen(false);
 
@@ -18,7 +20,7 @@ export function Header() {
         <div className="container topbar-inner">
           <a
             className="brand"
-            href="#home"
+            href="/"
             data-testid="link-brand"
             onClick={closeDrawer}
           >
@@ -31,17 +33,20 @@ export function Header() {
           </a>
 
           <nav className="desktop-nav" aria-label="Primary navigation">
-            {NAV_ITEMS.map(({ label, id }) => (
-              <a
-                key={id}
-                className={`nav-link${activeId === id ? " active" : ""}`}
-                href={`#${id}`}
-                data-testid={`link-nav-${id}`}
-                aria-current={activeId === id ? "location" : undefined}
-              >
-                {label}
-              </a>
-            ))}
+            {NAV_ITEMS.map(({ label, href }) => {
+              const isActive = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`nav-link${isActive ? " active" : ""}`}
+                  data-testid={`link-nav-${href.replace("/", "")}`}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </nav>
 
           <button
@@ -79,17 +84,21 @@ export function Header() {
           </button>
 
           <nav className="drawer-nav">
-            {NAV_ITEMS.map(({ label, id }) => (
-              <a
-                key={id}
-                className="drawer-link"
-                href={`#${id}`}
-                onClick={closeDrawer}
-                data-testid={`link-drawer-${id}`}
-              >
-                {label}
-              </a>
-            ))}
+            {NAV_ITEMS.map(({ label, href }) => {
+              const isActive = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`drawer-link${isActive ? " active" : ""}`}
+                  onClick={closeDrawer}
+                  data-testid={`link-drawer-${href.replace("/", "")}`}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </nav>
         </aside>
       </div>
