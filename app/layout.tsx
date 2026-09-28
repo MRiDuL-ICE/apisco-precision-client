@@ -31,8 +31,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
+      <Header />
+      <body className="page-body">
         <main>{children}</main>
         <Footer />
       </body>

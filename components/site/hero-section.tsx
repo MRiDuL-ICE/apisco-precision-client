@@ -49,10 +49,10 @@ export function HeroSection() {
             style={{ minHeight: "unset" }}
           >
             <MuxPlayer
-              playbackId="5j48zQjGvyA6YeyFEf9jkXtOUDiEK00z2X8cmxeubTys"
+              playbackId="zldwqAxxMXB3gXJFUXF8rrvPuhPW96tcorX00jDbTcaQ"
               metadata={{
-                video_id: "7QWgZWK7rjf8DK02v6gWS7CBj3a3cgiNSZNTQpwWszV4",
-                video_title: "apisco hero video 1",
+                video_id: "aIe600H3okI0137QABIKZPFWuobND72iFAXb8q96jdrdQ",
+                video_title: "Trimmed apisco hero vide",
               }}
               style={{ "--controls": "none", width: "100%", display: "block" }}
               loop={true}
