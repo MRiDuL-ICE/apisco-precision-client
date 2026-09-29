@@ -23,8 +23,8 @@ export const SERVICES = [
   {
     number: "01",
     label: "Representation",
-    title: "Bridging global manufacturers to Bangladesh",
-    text: "Acting as the authorised local partner for overseas API, excipient and packaging manufacturers — handling enquiries, quotations and order flow into the Bangladesh market.",
+    title: "Bridging global manufacturers to pharmaceutical industry",
+    text: "Acting as the authorised local partner for overseas API, excipient and packaging manufacturers — handling enquiries, quotations and order flow into the pharmaceutical industry.",
     icon: ShieldCheck,
   },
   {

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Key Services | Apisco Precision",
   description:
-    "Apisco Precision connects global API manufacturers with Bangladesh's pharmaceutical industry through precise sourcing, documentation and logistics.",
+    "Apisco Precision connects global API manufacturers with pharmaceutical industry through precise sourcing, documentation and logistics.",
 };
 
 export default function ServicesSection() {
@@ -18,7 +18,7 @@ export default function ServicesSection() {
       <div className="container">
         <SectionHeader
           title="Key services"
-          kicker="How a principal reaches a Bangladeshi manufacturer"
+          kicker="How a principal reaches a manufacturer"
           dark
         />
 
@@ -87,9 +87,7 @@ export default function ServicesSection() {
             {/* Right node */}
             <div className="flow-node">
               <span className="flow-label">Customer</span>
-              <h3 className="flow-node-title">
-                Bangladeshi pharmaceutical company
-              </h3>
+              <h3 className="flow-node-title">Pharmaceutical industry</h3>
               <p className="flow-node-sub">
                 Specification, PO and delivery requirements
               </p>

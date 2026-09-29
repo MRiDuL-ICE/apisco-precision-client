@@ -10,7 +10,7 @@ export function HeroSection() {
             <p className="eyebrow reveal">Pharmaceutical industry solutions</p>
             <h1 id="hero-title" className="hero-title reveal">
               The bridge between <em>global manufacturers</em> and
-              Bangladesh&apos;s pharmaceutical industry.
+              pharmaceutical industry.
             </h1>
             <p className="hero-lede reveal">
               Apisco Precision acts as a solution provider for global

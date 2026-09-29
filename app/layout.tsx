@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://apisco-precision-client.vercel.app/"),
   title: "Apisco Precision - Pharmaceutical ingredient sourcing & indenting",
   description:
-    "Apisco Precision connects global API manufacturers with Bangladesh's pharmaceutical industry through precise sourcing, documentation and logistics.",
+    "Apisco Precision connects global API manufacturers with pharmaceutical industry through precise sourcing, documentation and logistics.",
   openGraph: {
     title: "Apisco Precision - Ingredient sourcing & indenting",
     description:
-      "A considered route between global pharmaceutical ingredient manufacturers and Bangladesh's formulation floor.",
+      "A considered route between global pharmaceutical ingredient manufacturers and formulation floor.",
     type: "website",
     images: [
       {

@@ -20,8 +20,8 @@ export default function AboutSection() {
             <p>
               Apisco Precision continues a sourcing and solutions practice built
               around one simple observation: the space between an global
-              ingredient manufacturer and a Bangladeshi drug maker&apos;s
-              production schedule needs a careful operator.
+              ingredient manufacturer and a drug maker&apos;s production
+              schedule needs a careful operator.
             </p>
             <p>
               Our role sits inside that gap: identifying the right principal for

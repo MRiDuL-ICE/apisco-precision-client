@@ -11,7 +11,7 @@ export function ServicesSection() {
       <div className="container">
         <SectionHeader
           title="Key services"
-          kicker="How a principal reaches a Bangladeshi manufacturer"
+          kicker="How a principal reaches a manufacturer"
           dark
         />
 
@@ -80,9 +80,7 @@ export function ServicesSection() {
             {/* Right node */}
             <div className="flow-node">
               <span className="flow-label">Customer</span>
-              <h3 className="flow-node-title">
-                Bangladeshi pharmaceutical company
-              </h3>
+              <h3 className="flow-node-title">Pharmaceutical industry</h3>
               <p className="flow-node-sub">
                 Specification, PO and delivery requirements
               </p>

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Product | Apisco Precision",
   description:
-    "Apisco Precision connects global API manufacturers with Bangladesh's pharmaceutical industry through precise sourcing, documentation and logistics.",
+    "Apisco Precision connects global API manufacturers with pharmaceutical industry through precise sourcing, documentation and logistics.",
 };
 export default function ProductSection() {
   return (

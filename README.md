@@ -1,6 +1,6 @@
 # Apisco Precision
 
-Pharmaceutical ingredient sourcing & indenting — Bangladesh.
+Pharmaceutical ingredient sourcing & indenting.
 
 ## Getting started
 
